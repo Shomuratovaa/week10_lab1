@@ -15,10 +15,10 @@ int main() {
 
     for (int i = 0; i<num_vars-1; i++) {
        for (int j=i+1; j<num_vars; j++) {
-           if (arr[i]>arr[i]) {
+           if (arr[i]>arr[j]) {
                temp = arr[j];
                arr [j] = arr[i];
-               arr [1] = temp;
+               arr [i] = temp;
             }
        }
     }
